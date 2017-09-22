@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 
+/* Subtração de dois valores inteiros */
 int main() {
     int x, y;
     scanf("%d", &x);
