@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int celciusParaFahrenheit(double celcius);
-int fahrenheitParaCelcius(double fahrenheit);
+double celciusParaFahrenheit(double celcius);
+double fahrenheitParaCelcius(double fahrenheit);
 
 /* Faz a conversão de uma temperatura para Celcius ou Fahrenheit dependendo da opção */
 int main() {
@@ -22,13 +22,13 @@ int main() {
     return 0;
 }
 
-int celciusParaFahrenheit(double celcius) {
+double celciusParaFahrenheit(double celcius) {
     double fahrenheit;
     fahrenheit =  celcius * 1.80 + 32.00;
     return fahrenheit;
 }
 
-int fahrenheitParaCelcius(double fahrenheit) {
+double fahrenheitParaCelcius(double fahrenheit) {
     double celcius;
     celcius = fahrenheit - 32.00;
     celcius /= 1.80;
