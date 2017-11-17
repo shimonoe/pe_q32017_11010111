@@ -43,7 +43,7 @@ int main ( void ) {
 	}
 	tempo_fim = clock();
 	tempo_gasto = (double)(tempo_fim - tempo_init) / CLOCKS_PER_SEC;
-	printf("Tempo gasto na versao normal: %lf\n", tempo_gasto);
+	//printf("Tempo gasto na versao normal: %lf\n", tempo_gasto);
 
 	tempo_init = clock();
 	for ( int i = 0; i < BIGNUM; i++ ) {
@@ -51,7 +51,7 @@ int main ( void ) {
 	}
 	tempo_fim = clock();
 	tempo_gasto = (double)(tempo_fim - tempo_init) / CLOCKS_PER_SEC;
-	printf("Tempo gasto na versao bitwise: %lf\n", tempo_gasto);
+	//printf("Tempo gasto na versao bitwise: %lf\n", tempo_gasto);
 
 	// Resposta
 	printf("%s\n", (soma) ? "sim":"nao");
